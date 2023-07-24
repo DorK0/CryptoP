@@ -3,7 +3,7 @@
 $(function () {
   // Document Ready
   $.ajax({
-    url: "https://api.coingecko.com/api/v3/coins",
+    url: "https://api.coingecko.com/api/v3/coins/list",
     success: (coins) => {
       localStorage.setItem("allCoinsArray", JSON.stringify(coins));
       mainPageDisplay(coins);
